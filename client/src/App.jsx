@@ -12,7 +12,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 // Components
 import ScrollToTop from "./components/ScrollToTop";
-import TopBar from "./components/topBar";
+import TopBar from "./components/TopBar";
 import Header from "./components/header";
 import HomeHero from "./components/homeHero";
 import Footer from "./components/footer";
