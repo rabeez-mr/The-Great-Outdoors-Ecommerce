@@ -39,11 +39,11 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-          ui: ["react-bootstrap", "bootstrap"],
-        },
+       manualChunks: (id) => {
+  if (id.includes("react-dom") || id.includes("react/")) return "vendor";
+  if (id.includes("react-router-dom")) return "router";
+  if (id.includes("react-bootstrap") || id.includes("bootstrap")) return "ui";
+},
       },
     },
   },
