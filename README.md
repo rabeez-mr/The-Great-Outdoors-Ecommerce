@@ -103,3 +103,6 @@ REACT_APP_API_BASE_URL=http://localhost:5000/api/v1
 
 
 ## 🌟 Built with passion by Cyber Nexus
+
+## live host deployment
+Live at: http://135.235.194.128
