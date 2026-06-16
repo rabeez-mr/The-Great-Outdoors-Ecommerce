@@ -1,3 +1,6 @@
+
+![Deploy](https://github.com/rabeez-mr/The-Great-Outdoors-Ecommerce/actions/workflows/deploy.yml/badge.svg)
+
 <div align="center">
   
 <img src="./client/public/TGO-Logo.png" alt="Home Page" width="200" height="100">
