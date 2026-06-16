@@ -44,3 +44,8 @@ jobs:
             docker pull mohamedrabeez/great-outdoors-backend:latest
             docker pull mohamedrabeez/great-outdoors-frontend:latest
             docker-compose up -d
+
+      - name: Run API Tests
+        run: |
+          pip install requests pytest
+          pytest tests/test_website.py -v
