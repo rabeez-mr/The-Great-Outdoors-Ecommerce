@@ -107,5 +107,58 @@ REACT_APP_API_BASE_URL=http://localhost:5000/api/v1
 
 ## 🌟 Built with passion by Cyber Nexus
 
-## live host deployment
-Live at: http://135.235.194.128
+## 🚀 DevOps Pipeline
+
+![Deploy](https://github.com/rabeez-mr/The-Great-Outdoors-Ecommerce/actions/workflows/deploy.yml/badge.svg)
+
+This project includes a complete 9-step DevOps pipeline built by **SLM Rabeez**.
+
+### Infrastructure
+| Component | Technology |
+|-----------|------------|
+| Cloud Platform | Microsoft Azure VM (Ubuntu 24.04) |
+| Containerization | Docker + Docker Compose |
+| CI/CD | GitHub Actions + Docker Hub |
+| DNS | No-IP (greatoutdoors.ddns.net) |
+| Load Balancer | Azure Load Balancer |
+| Monitoring | Azure Monitor + Alerts |
+| SSL | Let's Encrypt (Certbot) |
+
+### 🌍 Live URLs
+- 🔒 **HTTPS:** https://greatoutdoors.ddns.net
+- 🌐 **IP:** http://135.235.194.128
+- ⚖️ **Load Balancer:** http://4.224.242.20
+
+### 🐳 Docker Commands
+```bash
+# Build images
+docker build -t great-outdoors-backend ./server
+docker build -t great-outdoors-frontend ./client
+
+# Run all containers
+docker-compose up --build -d
+
+# Check running containers
+docker ps
+
+# Stop all containers
+docker-compose down
+
+# View logs
+docker logs the-great-outdoors-ecommerce_backend_1
+```
+
+### ☁️ Azure VM Commands
+```bash
+# SSH connect to VM
+ssh rabeeztgo@135.235.194.128
+
+# Clone project on VM
+git clone https://github.com/rabeez-mr/The-Great-Outdoors-Ecommerce.git
+
+# Deploy on VM
+cd The-Great-Outdoors-Ecommerce
+docker-compose up --build -d
+```
+
+### 🔄 CI/CD FlowLive at: http://135.235.194.128
